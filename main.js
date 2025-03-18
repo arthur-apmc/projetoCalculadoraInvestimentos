@@ -42,10 +42,10 @@ function clearForm() {
   form['return-rate'].value = '';
   form['tax-rate'].value = '';
 
-  const errorInputsContainers = document.querySelectorAll('.error');
-  for (const errorInputsContainers of errorInputsContainers) {
-    errorInputsContainers.classList.remove('error');
-    errorInputsContainers.parentElement.querySelector('p').remove();
+  const errorInputContainers = document.querySelectorAll('.error');
+  for (const errorInputContainers of errorInputContainers) {
+    errorInputContainers.classList.remove('error');
+    errorInputContainers.parentElement.querySelector('p').remove();
   }
 }
 
