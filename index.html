@@ -12,11 +12,11 @@
     >
       <h1 class="text-2xl font-bold px-6">Calculadora de Investimentos</h1>
       <form id="investment-form" class="w-full">
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25]">
           <label for="starting-amount" class="font-bold text-gray-700"
             >Investimento inicial</label
           >
-          <div class="flex">
+          <div class="flex error">
             <input
               value="R$"
               class="w-1/6 text-center rounded-l-lg bg-gray-200"
@@ -33,7 +33,7 @@
             />
           </div>
         </div>
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25]">
           <label for="additional-contribution" class="font-bold text-gray-700"
             >Aportes adicionais</label
           >
@@ -53,7 +53,7 @@
             />
           </div>
         </div>
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25]">
           <label for="time-amount" class="font-bold text-gray-700">Prazo</label>
           <div class="flex">
             <input
@@ -74,7 +74,7 @@
             </select>
           </div>
         </div>
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25]">
           <label for="return-rate" class="font-bold text-gray-700"
             >Rentabilidade</label
           >
@@ -104,7 +104,7 @@
             </select>
           </div>
         </div>
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25]">
           <label for="tax-rate" class="font-bold text-gray-700"
             >Impostos sobre lucro</label
           >
@@ -136,6 +136,7 @@
           Calcular
         </button>
         <button
+          id="clear-form"
           class="w-1/2 rounded-lg bg-emerald-100 text-slate-950 hover:bg-emerald-700 cursor-pointer"
         >
           Limpar
